@@ -28,8 +28,8 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   }
 
+  console.log(cart);
   if (cart.length === 1) {
-    console.log(cart);
   }
 
   console.log(cart);
