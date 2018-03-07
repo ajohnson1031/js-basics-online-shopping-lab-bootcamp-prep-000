@@ -53,7 +53,7 @@ function viewCart() {
 
       i === l - 1 ? arr.push(`and ${itemName} at $${itemPrice}`) : arr.push(`${itemName} at $${itemPrice}`);
     }
-
+    console.log(arr);
     console.log(`In your cart, you have ${arr.join(', ')}.`);
   }
 }
