@@ -34,7 +34,7 @@ function viewCart() {
     var itemName = Object.keys(cart),
         itemPrice = Object.values(cart);
 
-    mess+= `${itemName} at ${itemPrice}.`;
+    mess+= `${itemName} at $${itemPrice}.`;
     //console.log(`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`);
     console.log(mess);
   }
