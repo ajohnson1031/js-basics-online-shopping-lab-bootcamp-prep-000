@@ -50,8 +50,9 @@ function viewCart() {
     for (let i = 0; i < l; i++) {
       let itemName = Object.keys(cart[i]);
       let itemPrice = Object.keys(cart[i]);
+      let item = `${itemName} at $${itemPrice}`;
 
-      i === l - 1 ? arr.push(`and ${itemName} at $${itemPrice}`) : arr.push(`${itemName} at $${itemPrice}`);
+      i === l - 1 ? item = 'and ' + item : ;
     }
     console.log(`In your cart, you have ${arr.join(', ')}.`);
   }
