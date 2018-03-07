@@ -51,7 +51,7 @@ function viewCart() {
 
     for (let i = 0; i < l; i++) {
       let itemName = Object.keys(cart[i]);
-      let itemPrice = Object.keys(cart[i]);
+      let itemPrice = Object.values(cart[i]);
       let item = `${itemName} at $${itemPrice}`;
 
       i === l - 1 ? item = 'and ' + item : doNothing();
