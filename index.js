@@ -22,7 +22,8 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var i;
+  var i,
+      mess;
 
   if (cart.length <= 0) {
     console.log('Your shopping cart is empty.');
