@@ -64,6 +64,7 @@ function viewCart() {
 
 function total() {
   // write your code here
+  const l = cart.length;
 }
 
 function removeFromCart(item) {
