@@ -45,7 +45,20 @@ function viewCart() {
     console.log(`In your cart, you have ${arr.join(' and ')}.`);
   } else
   if (cart.length > 2) {
-    
+    let arr = [];
+
+    for (let i = 0; i < cart.length; i++) {
+      let itemName = Object.keys(cart[i]);
+      let itemPrice = Object.keys(cart[i]);
+
+      if (i === cart.length) {
+        arr.push(`and ${itemName} at $${itemPrice}`);
+      } else {
+        arr.push(`${itemName} at $${itemPrice}`);
+      }
+
+      console.log(`In your cart, you have ${arr.join(', ')}.`);
+    }
   }
 
 }
