@@ -78,7 +78,7 @@ function removeFromCart(item) {
   // write your code here
   let x;
   for (x in cart) {
-    if (Object.keys(cart[x]).hasOwnProperty(item)) {
+    if (cart[x].hasOwnProperty(item)) {
       delete cart[x];
     }
   }
