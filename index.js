@@ -66,8 +66,9 @@ function total() {
   // write your code here
   const l = cart.length;
   let total = 0;
+  let item;
   
-  for (let item in cart) {
+  for (item in cart) {
     let itemPrice = Object.values(cart[item]);
     total += itemPrice;
   }
