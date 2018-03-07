@@ -64,7 +64,6 @@ function viewCart() {
 
 function total() {
   // write your code here
-  const l = cart.length;
   let total = 0;
   let item;
   
@@ -77,6 +76,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
