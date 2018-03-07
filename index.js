@@ -20,6 +20,8 @@ function addToCart(item) {
  return cart;
 }
 
+function doNothing() { }
+
 function viewCart() {
   // write your code here
   const l = cart.length;
