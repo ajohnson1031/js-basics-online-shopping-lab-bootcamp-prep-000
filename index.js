@@ -66,7 +66,7 @@ function total() {
   // write your code here
   let total = 0;
   let item;
-  
+
   for (item in cart) {
     let itemPrice = Object.values(cart[item]);
     total += parseInt(itemPrice);
@@ -76,7 +76,12 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  
+  let x;
+  for (x in cart) {
+    if (Object.keys(cart[item]) === item) {
+      delete cart[x];
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
