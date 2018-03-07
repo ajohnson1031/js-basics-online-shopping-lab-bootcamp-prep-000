@@ -22,15 +22,14 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  
+  var name = Object.keys(cart),
+      price = Object.values(cart);
 
   if (cart.length <= 0) {
     console.log('Your shopping cart is empty.');
   }
 
   if (cart.length === 1) {
-    var name = Object.keys(cart),
-        price = Object.values(cart);
     console.log(`In your cart, you have ${name} at $${price}.`);
   }
 
