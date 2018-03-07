@@ -70,7 +70,7 @@ function total() {
   
   for (item in cart) {
     let itemPrice = Object.values(cart[item]);
-    total += itemPrice;
+    total += parseInt(itemPrice);
   }
   return total;
 }
