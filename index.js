@@ -39,8 +39,7 @@ function viewCart() {
       let itemName = Object.keys(cart[i]);
       let itemPrice = Object.values(cart[i]);
 
-
-          arr.push(`${itemName} at $${itemPrice}`);
+      arr.push(`${itemName} at $${itemPrice}`);
     }
 
     console.log(`In your cart, you have ${arr.join(' and ')}`);
