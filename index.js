@@ -53,6 +53,8 @@ function viewCart() {
       let item = `${itemName} at $${itemPrice}`;
 
       i === l - 1 ? item = 'and ' + item : ;
+
+      arr.push(item);
     }
     console.log(`In your cart, you have ${arr.join(', ')}.`);
   }
