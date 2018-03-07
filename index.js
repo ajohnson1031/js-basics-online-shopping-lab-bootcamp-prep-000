@@ -28,9 +28,20 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   } else
   if (cart.length === 1) {
-    var itemName = Object.keys(cart[0]),
+    let itemName = Object.keys(cart[0]),
         itemPrice = Object.values(cart[0]);
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
+  } else
+  if (cart.length === 2) {
+    for (let i = 0; i < cart.length; i++) {
+      let itemName = Object.keys(cart[i]),
+          itemPrice = Object.values(cart[i]),
+          arr = [];
+
+          arr.push(`${itemName} at $${itemPrice}`);
+    }
+
+    console.log(`In your cart, you have ${arr.join(' and ')}`);
   }
 
 }
