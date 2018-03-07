@@ -64,14 +64,14 @@ function viewCart() {
 
 function total() {
   // write your code here
-  let tally = 0;
+  let total = 0;
   let item;
 
   for (item in cart) {
     let itemPrice = Object.values(cart[item]);
-    tally += parseInt(itemPrice);
+    total += parseInt(itemPrice);
   }
-  return tally;
+  return total;
 }
 
 function removeFromCart(item) {
@@ -95,7 +95,7 @@ function placeOrder(cardNumber) {
   let mess;
   let card = cardNumber;
   !cardNumber ? mess = `Sorry, we don't have a credit card on file for you.`
-  : mess = `Your total cost is $${tally}, which will be charged to the card ${card}.`;
+  : mess = `Your total cost is $${total}, which will be charged to the card ${card}.`;
   console.log(mess);
   cart = [];
 }
