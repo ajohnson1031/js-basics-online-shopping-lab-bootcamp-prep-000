@@ -26,13 +26,11 @@ function viewCart() {
 
   if (cart.length <= 0) {
     console.log('Your shopping cart is empty.');
-  }
-
-  console.log(cart);
+  } else 
   if (cart.length === 1) {
+    console.log(`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`);
   }
 
-  console.log(cart);
 }
 
 function total() {
