@@ -30,12 +30,11 @@ function viewCart() {
     console.log(mess);
   } else
   if (cart.length === 1) {
-
     var itemName = Object.keys(cart),
         itemPrice = Object.values(cart);
     mess = "In your cart, you have ";
     mess+= `${itemName} at $${itemPrice}.`;
-    //console.log(`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`);
+
     console.log(mess);
   }
 
