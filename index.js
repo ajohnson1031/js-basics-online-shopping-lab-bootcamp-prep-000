@@ -29,8 +29,7 @@ function viewCart() {
   }
 
   if (cart.length === 1) {
-    for (var key in cart) {
-      console.log(`In your cart, you have ${key} at $${cart[key]}.`);
+    console.log(cart);
     }
 
   }
