@@ -65,6 +65,13 @@ function viewCart() {
 function total() {
   // write your code here
   const l = cart.length;
+  let total = 0;
+  
+  for (item in cart) {
+    let itemPrice = Object.values(cart[item]);
+    total += itemPrice;
+  }
+  return total;
 }
 
 function removeFromCart(item) {
