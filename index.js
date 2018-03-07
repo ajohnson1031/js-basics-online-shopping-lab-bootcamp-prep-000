@@ -34,9 +34,9 @@ function viewCart() {
   } else
   if (cart.length === 2) {
     for (let i = 0; i < cart.length; i++) {
-      let itemName = Object.keys(cart[i]),
-          itemPrice = Object.values(cart[i]),
-          arr = [];
+      let itemName = Object.keys(cart[i]);
+      let itemPrice = Object.values(cart[i]);
+      let arr = [];
 
           arr.push(`${itemName} at $${itemPrice}`);
     }
