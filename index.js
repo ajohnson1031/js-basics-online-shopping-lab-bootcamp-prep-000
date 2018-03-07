@@ -11,9 +11,9 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var itemName = item,
-     itemPrice = Math.floor(Math.random() * 100) + 1,
-     obj = new Object({ [itemName] : itemPrice});
+ var item = item,
+     rand = Math.floor(Math.random() * 100) + 1,
+     obj = new Object({ [item] : rand});
 
  cart.push(obj);
  console.log(`${item} has been added to your cart.`);
