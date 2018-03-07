@@ -20,7 +20,7 @@ function addToCart(item) {
  return cart;
 }
 
-function doNothing() { }
+function nulle() { }
 
 function viewCart() {
   // write your code here
