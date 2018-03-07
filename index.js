@@ -26,11 +26,12 @@ function viewCart() {
       mess;
 
   if (cart.length <= 0) {
-    console.log('Your shopping cart is empty.');
+    mess = 'Your shopping cart is empty.';
+    console.log(mess);
   } else
   if (cart.length === 1) {
     mess = "In your cart, you have ";
-    alert(mess);
+
     //console.log(`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`);
   }
 
