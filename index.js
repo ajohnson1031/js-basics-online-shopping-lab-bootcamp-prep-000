@@ -27,15 +27,15 @@ function viewCart() {
   if (!l) {
     console.log('Your shopping cart is empty.');
   } else
-  if (cart.length === 1) {
+  if (l === 1) {
     let itemName = Object.keys(cart[0]),
         itemPrice = Object.values(cart[0]);
     console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
   } else
-  if (cart.length === 2) {
+  if (l === 2) {
     let arr = [];
 
-    for (let i = 0; i < cart.length; i++) {
+    for (let i = 0; i < l; i++) {
       let itemName = Object.keys(cart[i]);
       let itemPrice = Object.values(cart[i]);
 
@@ -44,18 +44,17 @@ function viewCart() {
 
     console.log(`In your cart, you have ${arr.join(' and ')}.`);
   } else
-  if (cart.length > 2) {
+  if (l > 2) {
     let arr = [];
 
-    for (let i = 0; i < cart.length; i++) {
+    for (let i = 0; i < l; i++) {
       let itemName = Object.keys(cart[i]);
       let itemPrice = Object.keys(cart[i]);
 
-      if (i === cart.length - 1) {
+      if (i === l - 1) {
         arr.push(`and ${itemName} at $${itemPrice}`);
-      } else {
+      else
         arr.push(`${itemName} at $${itemPrice}`);
-      }
 
       console.log(`In your cart, you have ${arr.join(', ')}.`);
     }
