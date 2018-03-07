@@ -28,12 +28,9 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   } else
   if (cart.length === 1) {
-    var itemName = Object.keys(cart),
-        itemPrice = Object.values(cart);
-    mess = "In your cart, you have ";
-    mess+= `${itemName} at $${itemPrice}.`;
-
-    console.log(mess);
+    var itemName = Object.keys(cart[0]),
+        itemPrice = Object.values(cart[0]);
+    console.log(`In your cart, you have ${itemName} at $${itemPrice}.`);
   }
 
 }
