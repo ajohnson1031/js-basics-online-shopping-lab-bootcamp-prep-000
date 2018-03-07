@@ -53,9 +53,9 @@ function viewCart() {
 
       if (i === l - 1) {
         arr.push(`and ${itemName} at $${itemPrice}`);
-      else
+      } else {}
         arr.push(`${itemName} at $${itemPrice}`);
-
+      }
       console.log(`In your cart, you have ${arr.join(', ')}.`);
     }
   }
