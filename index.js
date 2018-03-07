@@ -22,10 +22,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var i,
-      mess;
+  const l = cart.length;
 
-  if (cart.length <= 0) {
+  if (!l) {
     mess = 'Your shopping cart is empty.';
     console.log(mess);
   } else
