@@ -94,8 +94,8 @@ function placeOrder(cardNumber) {
   // write your code here
   let mess;
   let card = cardNumber;
-  !cardNumber ? mess = `Sorry, we don't have a credit card on file for you.` :
-  mess = `Your total cost is $${total}, which will be charged to the card ${card}.`;
+  !cardNumber ? mess = `Sorry, we don't have a credit card on file for you.` 
+  : mess = `Your total cost is $${total}, which will be charged to the card ${card}.`;
   console.log(mess);
   cart = [];
 }
