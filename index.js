@@ -31,8 +31,12 @@ function viewCart() {
   } else
   if (cart.length === 1) {
     mess = "In your cart, you have ";
+    var itemName = Object.keys(cart),
+        itemPrice = Object.values(cart);
 
+    mess+= `${itemName} at ${itemPrice}.`;
     //console.log(`In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}.`);
+    console.log(mess);
   }
 
 }
