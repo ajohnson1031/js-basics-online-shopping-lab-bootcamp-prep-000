@@ -34,7 +34,7 @@ function viewCart() {
   } else
   if (cart.length === 2) {
     let arr = [];
-    
+
     for (let i = 0; i < cart.length; i++) {
       let itemName = Object.keys(cart[i]);
       let itemPrice = Object.values(cart[i]);
@@ -42,7 +42,7 @@ function viewCart() {
       arr.push(`${itemName} at $${itemPrice}`);
     }
 
-    console.log(`In your cart, you have ${arr.join(' and ')}`);
+    console.log(`In your cart, you have ${arr.join(' and ')}.`);
   }
 
 }
