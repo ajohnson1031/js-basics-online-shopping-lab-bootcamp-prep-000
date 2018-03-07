@@ -56,12 +56,11 @@ function viewCart() {
       } else {}
         arr.push(`${itemName} at $${itemPrice}`);
       }
-      
+
       console.log(`In your cart, you have ${arr.join(', ')}.`);
     }
-  }
-
 }
+
 
 function total() {
   // write your code here
