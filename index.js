@@ -43,6 +43,9 @@ function viewCart() {
     }
 
     console.log(`In your cart, you have ${arr.join(' and ')}.`);
+  } else
+  if (cart.length > 2) {
+    
   }
 
 }
