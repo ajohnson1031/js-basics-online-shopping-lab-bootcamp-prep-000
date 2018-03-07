@@ -79,9 +79,12 @@ function removeFromCart(item) {
   let x;
   for (x in cart) {
     if (cart[x].hasOwnProperty(item)) {
-      delete cart[x];
+      cart.splice(x, 1);
+    } else {
+      console.log('That item is not in your cart.');
     }
   }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
