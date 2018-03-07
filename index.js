@@ -30,8 +30,6 @@ function viewCart() {
 
   if (cart.length === 1) {
     console.log(cart);
-    }
-
   }
 
   console.log(cart);
