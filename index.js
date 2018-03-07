@@ -55,8 +55,8 @@ function viewCart() {
 
       console.log(`In your cart, you have ${arr.join(', ')}.`);
     }
+  }
 }
-
 
 function total() {
   // write your code here
