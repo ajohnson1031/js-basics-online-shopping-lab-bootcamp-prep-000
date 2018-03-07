@@ -16,7 +16,7 @@ function addToCart(item) {
      obj = { item : rand };
      cart.push(obj);
 
- console.log(`${item} has been added to your cart.`);
+ console.log(`${itemName} has been added to your cart.`);
  return cart;
 }
 
