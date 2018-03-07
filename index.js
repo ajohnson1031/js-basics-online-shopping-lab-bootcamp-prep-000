@@ -79,7 +79,7 @@ function removeFromCart(item) {
   let x;
   for (x in cart) {
     if (Object.keys(cart[x]) === item) {
-      delete cart[x];
+      delete Object.keys(cart[x]);
     }
   }
 }
